@@ -14,7 +14,7 @@ function NavBar() {
     <header className='absolute flex-col p-6 text-white z-10'>
 
       {/* drawer section */}
-      <div className='flex gap-4'>
+      <div className='flex gap-4 te'>
         <button onClick={() => setIsExpanded(!isExpanded)}>
           <Menu />
         </button>

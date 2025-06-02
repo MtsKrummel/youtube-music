@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.sidebar{
+  position: relative;
+  color: #ffff;
+  width: 250px;
+  background-color: #000000;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ym-background-gradient{
+  background: linear-gradient(149deg, rgba(242, 29, 29, 1) 4%, rgba(119, 7, 100, 1) 52%, rgba(84, 1, 120, 1) 69%, rgba(0, 0, 0, 1) 100%);
+}
+
+.ym-background-blur{
+  backdrop-filter: blur(100px);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.header-section{
+  position: absolute;
+  background-color: transparent;
+}
