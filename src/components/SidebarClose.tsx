@@ -1,9 +1,8 @@
-import React from 'react'
 import { ITEMS } from '../consts/Items'
 
 function SidebarClose() {
   return (
-    <div className='absolute text-white p-2'>
+    <div className='absolute text-white pl-4 pt-4 '>
       <div className='relative max-w-[500px] w-full'>
         <ul className="flex flex-col gap-y-6 mt-20 max-w-[300px] w-full">
           {

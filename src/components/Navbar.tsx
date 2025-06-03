@@ -11,7 +11,7 @@ function NavBar() {
   const {isExpanded, setIsExpanded} = useContext(DrawerContext)
 
   return (
-    <header className='absolute flex-col p-6 text-white z-10'>
+    <header className='absolute flex-col p-8 text-white z-10'>
 
       {/* drawer section */}
       <div className='flex gap-4'>

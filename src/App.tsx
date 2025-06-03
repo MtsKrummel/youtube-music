@@ -11,17 +11,20 @@ export default function App() {
   const {isExpanded} = useContext(DrawerContext)
 
   return (
-    <div className='relative flex flex-col h-screen w-screen text-white overflow-hidden'>
+    <div className='app-container w-full text-white'>
       <NavBar />
+
+      {/* Main content */}
       <div className='flex'>
         {
           isExpanded ? <SidebarOpen /> : <SidebarClose />
         }
-        
-      <Main />
+        <Main />
       </div>
       <PlayerBar />
-      <div className='absolute w-full h-screen top-0 left-0 -z-30'>
+
+      {/* background */}
+      <div className='absolute w-full h-full top-0 left-0 -z-30'>
         <div className="ym-background-gradient absolute w-full h-full -z-20"></div>
         <div className="ym-background-black absolute w-full h-full -z-10"></div>
         <div className="ym-background-blur absolute w-full h-full -z-10"></div>
