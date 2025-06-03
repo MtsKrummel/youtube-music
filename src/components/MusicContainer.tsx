@@ -1,9 +1,19 @@
-import React from 'react'
+import type SongsType from "../consts/Songs";
 
-function MusicContainer({ children }: { children: React.ReactNode }) {
+type MusicContainerProps = {
+    title: string;
+    listOfSongs: SongsType[];
+}
+
+function MusicContainer({ title, listOfSongs }: MusicContainerProps) {
   return (
     <li>
-      {children}
+      <h2>{title}</h2>
+      <ul>
+        {listOfSongs.map(song => (
+          <li key={song.id}>{song.title}</li>
+        ))}
+      </ul>
     </li>
   )
 }
