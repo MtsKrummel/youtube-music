@@ -1,26 +1,30 @@
-import MusicCard from "./MusicCard"
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-function CarouselSection({ title }) {
+import ListOfSongs from "./ListOfSongs";
+import type { SongsType } from "../consts/Songs";
+
+type CarouselProps = {
+  title: string;
+  songs: SongsType[];
+};
+
+export function CarouselSection({ title, songs }: CarouselProps) {
   return (
-    <section className="px-6 mb-8">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-2xl font-semibold text-white">{title}</h2>
-        <button className="text-sm text-gray-400 hover:text-gray-200">More</button>
+    <section className="flex flex-col md:w-[600px] lg:w-[800px] xl:w-[1000px] mx-auto p-4 rounded-lg shadow-lg border-2">
+      <div className="flex items-center justify-between mb-2 w-full border-2">
+        <h2 className="text-xl font-bold">{title}</h2>
+        <div className="flex gap-2 lg:w-[100px]">
+          <button className="bg-zinc-600 hover:bg-zinc-700 p-2 rounded-full text-white">
+            <ChevronLeft />
+          </button>
+          <button className="bg-zinc-600 hover:bg-zinc-700 p-2 rounded-full text-white">
+            <ChevronRight />
+          </button>
+        </div>
       </div>
-      {/* This inner div simulates a horizontal scrolling row of cards */}
-      <div className="flex space-x-4 overflow-x-auto pb-2">
-        {/* Example Card (repeat as many as you need in real data‐map) */}
-        {[...Array(7)].map((_, i) => (
-          <div
-            key={i}
-            className="flex-none w-40 bg-gray-700 rounded-lg overflow-hidden"
-          >
-            <MusicCard title={} artist={} duration={} image={}/>
-          </div>
-        ))}
+      <div className="">
+        <ListOfSongs songs={songs} />
       </div>
     </section>
-  )
+  );
 }
-
-export default CarouselSection

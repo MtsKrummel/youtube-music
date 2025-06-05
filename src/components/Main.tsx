@@ -1,6 +1,5 @@
 import { SONGS } from "../consts/Songs";
-import CarouselSection from "./CarouselSection";
-import MusicCard from "./MusicCard";
+import { CarouselSection } from "./CarouselSection";
 
 function Main() {
   return (
@@ -8,12 +7,20 @@ function Main() {
       className="relative flex min-h-screen w-screen text-white"
     >
       <div className="bg-transparent mr-30"></div>
-      <section className="relative mt-24 p-8 pl-0 w-full">
-        <div className="p-4">
-          <CarouselSection title={'Escuchar de nuevo'}/>
-          <CarouselSection title={'Mixes para ti'}/>
-          <CarouselSection title={'Álbunes para ti'}/>
-          <CarouselSection title={'Bad Bunny'}/>
+
+      {/* Implementar filtros */}
+
+      <section 
+        className="relative mt-24 p-8 pl-0 w-full"
+      >
+        <div className="flex flex-col space-y-8 gap-8 my-8">
+          <CarouselSection 
+            title={'Escuchar de nuevo'}
+            songs={SONGS}
+          />
+          <CarouselSection title={'Mixes para ti'} songs={SONGS}/>
+          <CarouselSection title={'Álbunes para ti'} songs={SONGS}/>
+          <CarouselSection title={'Bad Bunny'} songs={SONGS}/>
         </div>
       </section>
 

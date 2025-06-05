@@ -12,18 +12,22 @@ export default function App() {
 
   return (
     <div className='app-container w-full text-white'>
+      {/* Encabezado */}
       <NavBar />
 
-      {/* Main content */}
+      {/* Contenido */}
       <div className='flex'>
         {
           isExpanded ? <SidebarOpen /> : <SidebarClose />
         }
         <Main />
       </div>
-      <PlayerBar />
 
-      {/* background */}
+      {/* Reproductor de música */}
+      <PlayerBar />
+      
+
+      {/* fondo */}
       <div className='absolute w-full h-full top-0 left-0 -z-30'>
         <div className="ym-background-gradient absolute w-full h-full -z-20"></div>
         <div className="ym-background-black absolute w-full h-full -z-10"></div>

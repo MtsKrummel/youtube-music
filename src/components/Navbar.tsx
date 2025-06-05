@@ -12,8 +12,7 @@ function NavBar() {
 
   return (
     <header className='absolute flex-col p-8 text-white z-10'>
-
-      {/* drawer section */}
+      {/* Logo y menú */}
       <div className='flex gap-4'>
         <button className='cursor-pointer' onClick={() => setIsExpanded(!isExpanded)}>
           <Menu />
@@ -22,12 +21,12 @@ function NavBar() {
         <img src={YoutubeIcon} alt='Yotube Music Logo' />
       </div>
 
-      {/* Search Section */}
+      {/* Buscador */}
       <div>
 
       </div>
 
-      {/* Profile Section */}
+      {/* Perfil */}
       <div>
 
       </div>

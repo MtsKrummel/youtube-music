@@ -6,10 +6,9 @@ type MusicContainerProps = {
     listOfSongs: SongsType[];
 }
 
-function MusicContainer({ title, listOfSongs }: MusicContainerProps) {
+function MusicContainer({ listOfSongs }: MusicContainerProps) {
   return (
     <li>
-      <h2>{title}</h2>
       <ul>
         {listOfSongs.map(song => (
           <li key={song.id}>{song.title}</li>
