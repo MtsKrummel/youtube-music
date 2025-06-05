@@ -11,7 +11,7 @@ export default function App() {
   const {isExpanded} = useContext(DrawerContext)
 
   return (
-    <div className='relative flex flex-col h-screen w-screen text-white overflow-hidden'>
+    <div className='relative flex flex-col h-screen w-full text-white'>
       <NavBar />
       <div className='flex'>
         {
