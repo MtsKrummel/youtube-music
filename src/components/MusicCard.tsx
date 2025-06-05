@@ -1,6 +1,6 @@
 import { Play } from "lucide-react";
 
-function MusicCard({ title, artist, image }) {
+function MusicCard({ title, artist, image, duration }) {
   return (
     <div className="group relative w-full max-w-xs rounded-2xl overflow-hidden shadow-lg bg-zinc-900 hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-48 w-full">
