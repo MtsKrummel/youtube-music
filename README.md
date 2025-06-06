@@ -106,10 +106,3 @@ El estado de la barra lateral se gestiona con Context API:
 
 > [!TIP]
 > Puedes personalizar los íconos en [`public/icons`](public/icons).
-
----
-
-## 📄 Licencia
-
-Proyecto educativo sin fines de lucro.  
-Desarrollado por [Tu Nombre].
