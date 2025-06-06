@@ -1,39 +1,15 @@
 # 🎵 Apple Music Clone
 
-Aplicación web inspirada en Apple Music, desarrollada con **React**, **TypeScript**, **Vite** y **TailwindCSS**. Permite explorar álbumes y canciones populares del rock argentino, con una interfaz moderna y responsiva.
+Este es el primer proyecto del Informatorio Chaco donde presentamos un clon de Youtube Music. Está desarrollada con **React**, **TypeScript**, **Vite** y **TailwindCSS**. Permite explorar álbumes y canciones populares del rock argentino, con una interfaz moderna y responsiva.
 
 ---
 
 ## 🚀 Características
 
 - Navegación lateral expandible/colapsable
-- Listado de álbumes y canciones con carátulas
+- Listado de álbumes y canciones con su portada
 - Barra de reproducción fija
-- Diseño responsive y moderno
 - Componentización y uso de Context API para el estado global
-
----
-
-## 📦 Estructura del Proyecto
-
-```
-├── public/
-│   ├── albums/
-│   ├── icons/
-│   └── songs/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── consts/
-│   ├── context/
-│   ├── types/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-├── package.json
-├── vite.config.ts
-└── ...
-```
 
 ---
 
