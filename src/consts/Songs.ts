@@ -57,40 +57,50 @@ export const SONGS: SongsType[] = [
 ];
 
 
-export const Albums: AlbumType[] = [
+export const ALBUMS: AlbumType[] = [
   {
-    title: "El Amor Después del Amor",
+    title: "Circo Beat",
     artist: "Fito Páez",
-    image: "/albums/el-amor-despues-del-amor.jpg",
-  },
-  {
-    title: "Signos",
-    artist: "Soda Stereo",
-    image: "/albums/signos.jpg",
-  },
-  {
-    title: "La Mosca y la Sopa",
-    artist: "Patricio Rey y sus Redonditos de Ricota",
-    image: "/albums/la-mosca-y-la-sopa.jpg",
+    image: "/albums/circo-beat.jpg",
   },
   {
     title: "Oktubre",
     artist: "Patricio Rey y sus Redonditos de Ricota",
-    image: "/albums/oktubre.jpg",
+    image: "/albums/oktubre.jpg"
   },
   {
-    title: "Análisis",
+    title: "Canción Animal",
+    artist: "Soda Stereo",
+    image: "/albums/cancion-animal.jpg"
+  },
+  {
+    title: "Un Mañana",
     artist: "Luis Alberto Spinetta",
-    image: "/albums/analisis.jpg",
+    image: "/albums/un-manana.jpg"
   },
   {
-    title: "La Colina de la Vida",
-    artist: "Sumo",
-    image: "/albums/la-colina-de-la-vida.jpg",
+    title: "La Era de la Boludez",
+    artist: "Divididos",
+    image: "/albums/la-era-de-la-boludez.jpg"
   },
   {
-    title: "Mondo Día",
-    artist: "Viejas Locas",
-    image: "/albums/mondo-dia.jpg",
+    title: "Bocanada",
+    artist: "Gustavo Cerati",
+    image: "/albums/bocanada.jpg"
+  },
+  {
+    title: "Despedazado por Mil Partes",
+    artist: "La Renga",
+    image: "/albums/despedazado-por-mil-partes.jpg"
+  },
+  {
+    title: "Artaud",
+    artist: "Pescado Rabioso",
+    image: "/albums/artaud.jpg"
+  },
+  {
+    title: "La Grasa de las Capitales",
+    artist: "Serú Girán",
+    image: "/albums/la-grasa-de-las-capitales.jpg"
   },
 ]

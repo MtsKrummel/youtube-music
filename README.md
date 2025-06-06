@@ -1,54 +1,115 @@
-# React + TypeScript + Vite
+# 🎵 Apple Music Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web inspirada en Apple Music, desarrollada con **React**, **TypeScript**, **Vite** y **TailwindCSS**. Permite explorar álbumes y canciones populares del rock argentino, con una interfaz moderna y responsiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- Navegación lateral expandible/colapsable
+- Listado de álbumes y canciones con carátulas
+- Barra de reproducción fija
+- Diseño responsive y moderno
+- Componentización y uso de Context API para el estado global
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Estructura del Proyecto
+
+```
+├── public/
+│   ├── albums/
+│   ├── icons/
+│   └── songs/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── consts/
+│   ├── context/
+│   ├── types/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── package.json
+├── vite.config.ts
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Instalación y Uso
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Instala las dependencias:**
+   ```sh
+   npm install
+   ```
+
+2. **Inicia el servidor de desarrollo:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Construye para producción:**
+   ```sh
+   npm run build
+   ```
+
+> [!NOTE]
+> El proyecto utiliza [Vite](https://vitejs.dev/) para un desarrollo rápido y recarga en caliente.
+
+---
+
+## 🧩 Principales Tecnologías
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Lucide React Icons](https://lucide.dev/)
+
+---
+
+## 📂 Componentes Destacados
+
+- `App.tsx`: Componente raíz y layout principal.
+- [`Navbar`](src/components/Navbar.tsx): Barra superior con menú y logo.
+- [`SidebarOpen`](src/components/SidebarOpen.tsx) / [`SidebarClose`](src/components/SidebarClose.tsx): Navegación lateral expandible.
+- [`PlayerBar`](src/components/Playerbar.tsx): Barra de reproducción fija.
+- [`CarouselSection`](src/components/CarouselSection.tsx): Carrusel de álbumes/canciones.
+- [`ListOfSongs`](src/components/ListOfSongs.tsx): Listado horizontal de canciones o álbumes.
+
+---
+
+## 🧑‍💻 Estado Global
+
+El estado de la barra lateral se gestiona con Context API:
+
+- [`DrawerContext`](src/context/drawer.tsx): Provee `isExpanded` y `setIsExpanded` a toda la app.
+
+---
+
+## 📋 Scripts Disponibles
+
+| Comando         | Descripción                        |
+|-----------------|------------------------------------|
+| `npm run dev`   | Inicia el servidor de desarrollo   |
+| `npm run build` | Compila la app para producción     |
+| `npm run lint`  | Ejecuta ESLint                    |
+| `npm run preview` | Previsualiza la build            |
+
+---
+
+## 📝 Notas
+
+> [!NOTE]
+> Las imágenes de álbumes y canciones se encuentran en la carpeta [`public/albums`](public/albums) y [`public/songs`](public/songs).
+
+> [!TIP]
+> Puedes personalizar los íconos en [`public/icons`](public/icons).
+
+---
+
+## 📄 Licencia
+
+Proyecto educativo sin fines de lucro.  
+Desarrollado por [Tu Nombre].

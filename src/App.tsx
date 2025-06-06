@@ -16,12 +16,13 @@ export default function App() {
       <NavBar />
 
       {/* Contenido */}
-      <div className='flex'>
-        {
-          isExpanded ? <SidebarOpen /> : <SidebarClose />
-        }
-        <Main />
+      <div className="flex w-full">
+        {isExpanded ? <SidebarOpen /> : <SidebarClose />}
+        <main className="flex-1 min-h-screen overflow-hidden">
+          <Main />
+        </main>
       </div>
+
 
       {/* Reproductor de música */}
       <PlayerBar />

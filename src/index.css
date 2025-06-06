@@ -25,15 +25,16 @@ body, #root {
   display: block;
 }
 
-.sidebar{
+.sidebar {
   position: relative;
   color: #ffff;
-  width: 250px;
+  width: 200px;
   background-color: #000000;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 2s;
 }
+
 
 .player{
   position: fixed;
