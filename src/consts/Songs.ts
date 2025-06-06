@@ -104,3 +104,36 @@ export const ALBUMS: AlbumType[] = [
     image: "/albums/la-grasa-de-las-capitales.jpg"
   },
 ]
+
+export const SONGS_BAD_BUNNY: SongsType[] = [
+  {
+    title: "DÁKITI",
+    artist: "Bad Bunny & Jhay Cortez",
+    image: "/artist/bad-bunny/dakiti.jpg",
+    duration: "3:25",
+  },
+  {
+    title: "Yo Perreo Sola",
+    artist: "Bad Bunny",
+    image: "/artist/bad-bunny/yo-perreo-sola.jpg",
+    duration: "3:35",
+  },
+  {
+    title: "Vete",
+    artist: "Bad Bunny",
+    image: "/artist/bad-bunny/vete.jpg",
+    duration: "3:20",
+  },
+  {
+    title: "La Difícil",
+    artist: "Bad Bunny",
+    image: "/artist/bad-bunny/la-dificil.jpg",
+    duration: "3:10",
+  },
+  {
+    title: "Un Verano Sin Ti",
+    artist: "Bad Bunny",
+    image: "/artist/bad-bunny/un-verano-sin-ti.jpg",
+    duration: "3:30",
+  },
+]

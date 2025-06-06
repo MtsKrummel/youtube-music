@@ -1,4 +1,4 @@
-import { ALBUMS, SONGS } from "../consts/Songs";
+import { ALBUMS, SONGS, SONGS_BAD_BUNNY } from "../consts/Songs";
 import { CarouselSection } from "./CarouselSection";
 
 function Main() {
@@ -18,8 +18,15 @@ function Main() {
             title={'Escuchar de nuevo'}
             songs={SONGS}
           />
-          <CarouselSection title={'Álbunes para ti'} songs={ALBUMS}/>
-          <CarouselSection title={'Bad Bunny'} songs={SONGS}/>
+          <CarouselSection 
+            title={'Álbunes para ti'} 
+            songs={ALBUMS}
+          />
+          <CarouselSection 
+            title={'Bad Bunny'}
+            artist={'bad-bunny'} 
+            songs={SONGS_BAD_BUNNY}
+          />
         </div>
       </section>
 
